@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 14px 'Marcellus SC', serif;
+    background: #171A21;
+    color: #93B8B9;
+}
+
+.page_content {
+  max-width: 960px;
+  margin: auto;
+}
+
+header {
+    text-align: center;
+    font-size: 200%;
+    height: 100vh;
+    background: url("../img/header.svg") no-repeat fixed center;  
+}
+
+.bg-video {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: -20px;
+    position: fixed;
+    z-index: -1;
+}
+
+header > h1 {
+    margin: 0;
+    padding-top: 100px;
+    text-align: center;
+    z-index: 1;
+}
+
+header > .down-buttom {
+    position: absolute;
+    bottom: 50px;
+    background: none;
+    color: #93B8B9;
+    text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align:center;
+  background: #171A21;
+  width: 100vw;
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline;
+    text-align: center;
+}
+
+nav > ul > li {
+    display: inline;
+}
+
+nav > ul > li > a {
+    padding: 15px;
+    font-size: 200%;
+    display: inline-block;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.column > .content {
+    flex: 1;
+    text-align: justify;
+    padding: 40px 0 40px 0;
+    border-top: 1px solid #93B8B9;
+    border-bottom: 1px solid #93B8B9;
+    margin: 40px 0px 40px 0;
+}
+
+.column > .content::first-letter {
+  font-size: 200%;
+}
+
+.content-start {
+    padding-top: 50px;
+}
+
+.interlude {
+    height: 100vh;
+    width: 100%;
+    background: url("../img/header.svg") no-repeat fixed center;
+    filter: invert(100%);    
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 400px;
+}
+
+@media screen and (max-width: 640px) {
+  .row {
+      flex-wrap: wrap;
+  }
+  .column {
+      width: 100%;
+  }
+}
